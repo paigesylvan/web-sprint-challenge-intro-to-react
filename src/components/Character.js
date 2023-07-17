@@ -1,5 +1,5 @@
 // Write your Character component here
-import React, { useState, useEffect } from 'react';
+import React, {useState} from 'react';
 import axios from 'axios';
 
 //1. Build a React component named 'Character' to render an individual character.
@@ -8,26 +8,19 @@ import axios from 'axios';
 //1. The character's name can't be hard-coded into the HTML. This data must be obtained from the API.
 //1. The components must be styled with **styled-components**.
 
+
+
 const Character = (props) => {
 
-const {characters} = props
-
-return (
-    <div className='individual-containter'>
-
-    </div>
-)
+    return (
+        <div className='character'>
+          {props.info.name}
+  
+        </div>
+    )
 }
+
+
 
 export default Character;
 
-//const dummyData = {
-//name: "Luke Skywalker",ß
-//gender: "male",
-//height: "172",
-//mass: "77",
-//birth_year: "19BBY",
-////eye_color: "blue",
-//hair_color: "blond",
-//skin_color: "fair",
-//}
